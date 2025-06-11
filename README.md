@@ -100,7 +100,7 @@ geometry_msgs::msg::Twist scale_velocity_by_distance(
 
 ```bash
 cd ~/ros2_ws/src
-git clone https://github.com/usuario/proyecto-turtlebot3-seguro.git
+git clone https://github.com/anietodev/prox_sensor_pkg.git
 ```
 2. Compila el paquete:
 - Abre CoppeliaSim y carga la escena del almacén incluida en el proyecto.
