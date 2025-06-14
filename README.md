@@ -118,7 +118,7 @@ ros2 launch prox_sensor_pkg prox_system_launch.py
 
 4. Para controlar manualmente el robot con el teclado, abre una segunda terminal, carga el entorno de ROS 2 y ejecuta:
 ```bash
-source ~/ros2_ws/install/setup.bash
+source ~/RM_prac/install/setup.bash
 ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/cmd_vel_teleop
 ```
 ---
