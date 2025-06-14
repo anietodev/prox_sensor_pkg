@@ -99,18 +99,26 @@ geometry_msgs::msg::Twist scale_velocity_by_distance(
 1. Clona el repositorio dentro de tu espacio de trabajo ROS 2:
 
 ```bash
-cd ~/ros2_ws/src
+cd ~/RM_prac/src
 git clone https://github.com/anietodev/prox_sensor_pkg.git
 ```
 2. Compila el paquete:
-- Abre CoppeliaSim y carga la escena del almacén incluida en el proyecto.
-
-3. Ejecuta la simulación:
 ```bash
-ros2 run prox_sensor_pkg prox_sensor_node
+cd ~/RM_prac
+colcon build --packages-select prox_sensor_pkg
+source install/setup.bash
 ```
-4. Para controlar manualmente el robot:
+3. Ejecuta la simulación (abre automáticamente CoppeliaSim con la escena y lanza el nodo de control de velocidad):
 ```bash
+ros2 launch prox_sensor_pkg prox_system_launch.py
+```
+🔧 Asegúrate de haber modificado en el archivo prox_sensor.launch.py la ruta correcta a:
+- El ejecutable de CoppeliaSim (coppeliaSim.sh)
+- La escena almacen.ttt incluida en el paquete
+
+4. Para controlar manualmente el robot con el teclado, abre una segunda terminal, carga el entorno de ROS 2 y ejecuta:
+```bash
+source ~/ros2_ws/install/setup.bash
 ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/cmd_vel_teleop
 ```
 ---
