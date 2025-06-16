@@ -128,4 +128,4 @@ Puedes utilizar, modificar y distribuir el código libremente siempre que incluy
 
 ---
 ## 🙌 Agradecimientos
-A nuestro profesor de Robótica Móvil, Leopoldo Armesto, por su orientación durante el desarrollo del proyecto.
+A nuestro profesor de Robótica Móvil, Leopoldo Armesto, por su apoyo y supervisión durante el desarrollo del proyecto y a Ricardo Nuñez por su apoyo en las prácticas de la asignatura.
